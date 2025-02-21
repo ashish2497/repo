@@ -6,8 +6,10 @@
 trigger:
 - main
 
-pool:
-  vmImage: ubuntu-latest
+pool: 
+  name: local
+  demands: 
+  - Tag -equals agent
 
 steps:
 - script: echo Hello, world!
